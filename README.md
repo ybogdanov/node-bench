@@ -6,7 +6,7 @@ This script is made for measuring NodeJS EventLoop performance under concurrent 
 
 You need NodeJS >= 0.8.15 installed.
 
-	git clone _this_repo_
+	git clone git://github.com/0ctave/node-bench.git
 	cd node-bench
 	npm install
 
