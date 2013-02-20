@@ -17,7 +17,7 @@ You need NodeJS >= 0.8.15 installed.
 # Options
 
 ###--cpu
-Percentage of CPU within each request. Any value between `0` and `100`.
+Percentage of CPU time within each request. Any value between `0` and `100`.
 
 ###-t
 Time of the request. And numeric value is valid.
