@@ -3,9 +3,16 @@
 // npm install
 // node bench.js --cpu 10 -t 57 -n 100 -c 10
 
-var argv = require('optimist').argv;
+var opts = require('optimist')
+  .usage('Measures NodeJS eventloop performance under cuncurrent load.\nUsage: $0 --cpu 10 -t 57 -n 100 -c 10')
+  .demand(['cpu', 't', 'n', 'c'])
+  .describe('cpu', '[int] Percentage of CPU time within each request. Any value between 0 and 100')
+  .describe('t', '[int] Time of the request')
+  .describe('n', '[int] Number of requests to make')
+  .describe('c', '[int] Concurrency level');
 
-var totalTime = argv.t,
+var argv = opts.argv,
+    totalTime = argv.t,
     n = argv.n,
     c = argv.c,
     cpuPart = argv.cpu,
