@@ -13,6 +13,10 @@ You need NodeJS >= 0.8.15 installed.
 # Run
 
 	node bench.js --cpu 10 -t 57 -n 100 -c 10
+	
+Example result:
+
+	IO/CPU = 90/10, 57ms/req | took 1176ms, avg 115ms/req (x2)
 
 # Options
 
