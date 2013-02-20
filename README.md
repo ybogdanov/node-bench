@@ -20,14 +20,14 @@ Example result:
 
 # Options
 
-###--cpu
+###--cpu `int`
 Percentage of CPU time within each request. Any value between `0` and `100`.
 
-###-t
-Time of the request. And numeric value is valid.
+###-t `int`
+Time of the request. 
 
-###-n
+###-n `int`
 Number of requests to make.
 
-###-c
+###-c `int`
 Concurrency level.
